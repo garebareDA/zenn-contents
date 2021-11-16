@@ -28,7 +28,6 @@ https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extension
 
 口はマイクでLipSyncで動かすので、い、う、え、おの口の差分を用意します。
 
-
 右腕はマウスで動かしたいので動かしたいので右、左、奥、手前の差分を作ります。
 そして動きを滑らかにするために中間に一コマをそれぞれ挟んでいます。
 
@@ -37,5 +36,4 @@ https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extension
 目は視線の移動をマウスと連動させたいので上下左右に視線を送っている差分をそれぞれ用意し、瞬きをランダムでさせたいので瞬きのアニメーションも作成します。
 
 # UnityでOVR LipSyncの設定
-先ほど作って素材を全てUnityにインポートします。
-そしてSpriteに設定し、口以外をレイヤーを指定して配置します。
+まずVR LipSyncをUnityにインポートします。
