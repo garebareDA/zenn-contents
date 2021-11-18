@@ -37,3 +37,7 @@ https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extension
 
 # UnityでOVR LipSyncの設定
 まずVR LipSyncをUnityにインポートします。
+そしてEmptyのGameObjectを作成します。
+作成したGameObjectにOVR Lipsyncをアタッチします。
+
+そしてPlaneを設置して口のテクスチャを貼り付けて前に向けます。
