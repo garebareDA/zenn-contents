@@ -36,8 +36,14 @@ https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extension
 目は視線の移動をマウスと連動させたいので上下左右に視線を送っている差分をそれぞれ用意し、瞬きをランダムでさせたいので瞬きのアニメーションも作成します。
 
 # UnityでOVR LipSyncの設定
-まずVR LipSyncをUnityにインポートします。
+まずVR LipSyncをUnityにインポートして、モードを2Dにします。
 そしてEmptyのGameObjectを作成します。
 作成したGameObjectにOVR Lipsyncをアタッチします。
 
-そしてPlaneを設置して口のテクスチャを貼り付けて前に向けます。
+そしてPlaneを設置して口のテクスチャを貼り付けて全面に向けます。
+Scaleは出力したドット絵の解像度に合わせます。
+
+# アニメーションの作成
+先程用意した素材でスプライトアニメーションを作成します。
+
+# スクリプトで動かす
