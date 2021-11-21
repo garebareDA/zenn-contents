@@ -33,20 +33,24 @@ https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extension
 ### 口
 口はマイクを使い、LipSyncで動かすので、あ、い、う、え、おの口の差分を用意しました。
 ![](/images/PixelVtuber/mouth.png)
+![](/images/PixelVtuber/mouth.gif)
 
 ### 右腕
 右腕はマウスで動かすので右、左、奥、手前の差分を作ります。
 右腕が服にかぶったり、服の影が変わったりするため、服も一緒に書き込んでいます。
-そして動きを滑らかにするために中間に一コマをそれぞれ挟んでいます。
+そして動きを滑らかにするために中間に一コマをそれぞれ挟んでいます(一部兼用)。
 ![](/images/PixelVtuber/right.png)
+![](/images/PixelVtuber/right.gif)
 
 ### 左腕
 左腕はキーボードを押している時だけ下に動きます。
 ![](/images/PixelVtuber/left.png)
+![](/images/PixelVtuber/left.gif)
 
 ### 目
 目は視線の移動をマウスと連動させたいので上下左右に視線を送っている差分をそれぞれ用意し、瞬きをランダムでさせたいので瞬きのアニメーションも作成します。
 ![](/images/PixelVtuber/eye.png)
+![](/images/PixelVtuber/eye.gif)
 
 まとめると
 マウス -> 右腕と目線
