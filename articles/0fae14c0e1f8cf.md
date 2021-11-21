@@ -8,7 +8,7 @@ published: false
 
 Vtuberになりたくておもちゃ的なのを作ってみたので記事にしてみます。
 # 完成品
-//あとで完成品の動画を載せる
+![](/images/PixelVtuber/pixelVtuber.gif)
 
 # なぜドット絵になったのか
 一番はじめは3DモデルでVtuberを作ったのですがモーションキャプチャーできる物を当時高校生だったので買うことができず、LipSyncで口を動かし後付けでモーションを作成していました。
@@ -22,26 +22,42 @@ https://developer.oculus.com/downloads/package/oculus-lipsync-unity/
 https://github.com/Elringus/UnityRawInput
 https://github.com/kaikikazu/XinputGamePad
 https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extensions-for-unity-17276
+基本的にバックグラウンドで入力を受け取るものとLipSyncに関してはアセットに頼りました。
 
 # 素材を用意する
-まず人型のドット絵のどの部分をどのデバイスで動かすを決めてドット絵を差分も含めて作成します。
+まずどの部分をどのデバイスniを決めてドット絵を差分も含めて作成しました。
 
-口はマイクでLipSyncで動かすので、い、う、え、おの口の差分を用意します。
+## 全体像
+![](/images/PixelVtuber/all.png)
 
-右腕はマウスで動かしたいので動かしたいので右、左、奥、手前の差分を作ります。
+### 口
+口はマイクを使い、LipSyncで動かすので、あ、い、う、え、おの口の差分を用意しました。
+![](/images/PixelVtuber/mouth.png)
+
+### 右腕
+右腕はマウスで動かすので右、左、奥、手前の差分を作ります。
+右腕が服にかぶったり、服の影が変わったりするため、服も一緒に書き込んでいます。
 そして動きを滑らかにするために中間に一コマをそれぞれ挟んでいます。
+![](/images/PixelVtuber/right.png)
 
-左腕はキーボードを押している時だけ下にずれます。
+### 左腕
+左腕はキーボードを押している時だけ下に動きます。
+![](/images/PixelVtuber/left.png)
 
+### 目
 目は視線の移動をマウスと連動させたいので上下左右に視線を送っている差分をそれぞれ用意し、瞬きをランダムでさせたいので瞬きのアニメーションも作成します。
+![](/images/PixelVtuber/eye.png)
 
-# UnityでOVR LipSyncの設定
-まずVR LipSyncをUnityにインポートして、モードを2Dにします。
-そしてEmptyのGameObjectを作成します。
-作成したGameObjectにOVR Lipsyncをアタッチします。
+まとめると
+マウス -> 右腕と目線
+キーボード -> 左腕
+口 -> マイク
+瞬き -> スクリプトでランダム
+という感じでそれぞれ対応います。
 
-そしてPlaneを設置して口のテクスチャを貼り付けて全面に向けます。
-Scaleは出力したドット絵の解像度に合わせます。
+# UnityでOVR LipSyncなどの設定
+OVR LipSyncの基本的な設定の説明は省きます。
+
 
 # アニメーションの作成
 先程用意した素材でスプライトアニメーションを作成します。
