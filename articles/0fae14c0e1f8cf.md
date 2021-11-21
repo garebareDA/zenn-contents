@@ -25,9 +25,9 @@ https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extension
 基本的にバックグラウンドで入力を受け取るものとLipSyncに関してはアセットに頼りました。
 
 # 素材を用意する
-まずどの部分をどのデバイスniを決めてドット絵を差分も含めて作成しました。
+まずどの部分をどのデバイスで動かすかを決めてドット絵の差分も含めて作成しました。
 
-## 全体像
+## ドット絵の全体像
 ![](/images/PixelVtuber/all.png)
 
 ### 口
@@ -61,7 +61,7 @@ https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extension
 
 # UnityでOVR LipSyncなどの設定
 OVR LipSyncの基本的な設定の説明は省きます。
-
+まず
 
 # アニメーションの作成
 先程用意した素材でスプライトアニメーションを作成します。
