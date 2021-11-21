@@ -42,7 +42,6 @@ https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extension
 口はマイクを使い、LipSyncで動かすので、あ、い、う、え、おの口の差分を用意しました。
 ![](/images/PixelVtuber/mouth.png)
 ![](/images/PixelVtuber/mouth.gif)
->>>>>>> 9973edfd1d0f3313248a3c3f891374ddb788a5ae
 
 ### 右腕
 右腕はマウスで動かすので右、左、奥、手前の差分を作ります。
@@ -61,11 +60,19 @@ https://assetstore.unity.com/packages/tools/integration/unirx-reactive-extension
 ![](/images/PixelVtuber/eye.png)
 ![](/images/PixelVtuber/eye.gif)
 
+### 表情
+キーバインドで表情は切り替える方式を取りました。
+Ctrlキーと数字キーで切り替えます。
+左Ctrlキーと数字キーで目の切り替え、右Ctrlキーと数字で怒りマークなどの装飾品を切り替えることにました。
+![](/images/PixelVtuber/expression.png)
+![](/images/PixelVtuber/expression.gif)
+
 まとめると
 マウス -> 右腕と目線
 キーボード -> 左腕
 口 -> マイク
 瞬き -> スクリプトでランダム
+表情 -> Ctrl + Num
 という感じでそれぞれ対応います。
 
 # UnityでOVR LipSyncなどの設定
