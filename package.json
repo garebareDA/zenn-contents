@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/garebareDA/zenn-contents#readme",
   "dependencies": {
-    "zenn-cli": "^0.1.105"
+    "zenn-cli": "^0.1.158"
   }
 }
